@@ -19,7 +19,9 @@ module.exports = function(app) {
 function read(res) {
         fs.readFile('./db/db.json', 'utf8', function(err, data) {
         if (err) throw err;
+
         const dataJSON = JSON.parse(data);
+
         res.json(dataJSON);
     })
 }
@@ -30,9 +32,11 @@ function addNote(req) {
 
             const dataJSON = JSON.parse(data);
             const newNotes = [...dataJSON, req.body];
+
             newNotes.map(obj => {
                 obj.id = Math.random();
             })
+
             writeDb(newNotes);
         });
 }
@@ -46,13 +50,16 @@ function writeDb(newNotes) {
 function deleteNote(req) {
     fs.readFile('./db/db.json', 'utf8', function(err, data) {
         if (err) throw err;
+
         const dataJSON = JSON.parse(data);
         const newArray = [];
+
         dataJSON.map(obj => {
             if (obj.id != req.params.id) {
                 newArray.push(obj);
             }; 
         });
+        
         writeDb(newArray);
     });
 }
