@@ -59,7 +59,7 @@ function deleteNote(req) {
                 newArray.push(obj);
             }; 
         });
-        
+
         writeDb(newArray);
     });
 }
