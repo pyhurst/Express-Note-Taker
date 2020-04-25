@@ -31,11 +31,10 @@ function addNote(req) {
             if (err) throw err;
 
             const dataJSON = JSON.parse(data);
-            const newNotes = [...dataJSON, req.body];
 
-            newNotes.map(obj => {
-                obj.id = Math.random();
-            })
+            req.body.id = Math.random();
+
+            const newNotes = [...dataJSON, req.body];
 
             writeDb(newNotes);
         });

@@ -7,7 +7,7 @@
 
 ## Description
 
-Allows a user to create, save, and delete notes.
+Allows a user to create, save, delete, and view old notes.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Website. Not installation required.
 
 ## Usage
 
-Created for an easy way to store your notes! In the note taking page, the user will first see any previously saved notes on the left hand side where each title will be displayed.  You have the option of clicking on a saved title to read, edit, or delete the notes by clicking on the garbage can icon. On the right side of the page, there is a section for your title and notes. Once both sections have text, the user may save the notes and see the saved file on the left side with all of the other saved notes.  
+Created for an easy way to store your notes! In the note taking page, the user will first see any previously saved notes on the left hand side where each title will be displayed.  You have the option of clicking on a saved title to read or delete the notes by clicking on the garbage can icon. On the right side of the page, there is a section for your title and notes. Once both sections have text, the user may save the notes and see the saved file on the left side with all of the other saved notes.  
 
 ## License
 
